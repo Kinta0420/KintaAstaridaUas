@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaleriActivity"
+    android:gravity="center"
+    android:background="@drawable/back">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/jeruk" />
+
+    <TextView
+        android:id="@+id/namabuah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Nama Buah"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/asalBuah"
+        android:textColor="@color/black"
+        android:layout_below="@+id/namabuah"
+        android:layout_marginTop="5dp"
+        android:text="Asal"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/description"
+        android:textColor="@color/black"
+        android:layout_below="@+id/asalBuah"
+        android:layout_marginTop="5dp"
+        android:text="Deskripsi"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_below="@id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginLeft="30dp"
+            android:onClick="btn_left"
+            android:text="Prev"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_marginLeft="170dp"
+            android:onClick="btn_right"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
